@@ -45,7 +45,7 @@ export default function AboutPage() {
           <div className="w-full flex flex-col md:flex-row justify-between gap-6">
             <div className="bg-orange-500 p-8 rounded-lg text-white flex items-center justify-between shadow-lg transform hover:scale-105 transition-transform flex-1">
               <div>
-                <h3 className="text-4xl font-bold mb-2">4000+</h3>
+                <h3 className="text-4xl font-bold mb-2">400+</h3>
                 <p className="text-white/90">undergraduate and graduate students</p>
               </div>
               <GraduationCap className="w-12 h-12 opacity-90" />
@@ -53,7 +53,7 @@ export default function AboutPage() {
 
             <div className="bg-orange-500 p-8 rounded-lg text-white flex items-center justify-between shadow-lg transform hover:scale-105 transition-transform flex-1">
               <div>
-                <h3 className="text-4xl font-bold mb-2">250+</h3>
+                <h3 className="text-4xl font-bold mb-2">25+</h3>
                 <p className="text-white/90">Global Education Institute Faculty and Staff</p>
               </div>
               <Users className="w-12 h-12 opacity-90" />
@@ -61,7 +61,7 @@ export default function AboutPage() {
 
             <div className="bg-orange-500 p-8 rounded-lg text-white flex items-center justify-between shadow-lg transform hover:scale-105 transition-transform flex-1">
               <div>
-                <h3 className="text-4xl font-bold mb-2">15000+</h3>
+                <h3 className="text-4xl font-bold mb-2">5000+</h3>
                 <p className="text-white/90">Global Alumni Worldwide</p>
               </div>
               <Globe className="w-12 h-12 opacity-90" />
