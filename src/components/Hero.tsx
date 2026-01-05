@@ -21,19 +21,19 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-[600px] overflow-hidden">
-      <div className="absolute inset-0">
+    <section className="relative h-[600px] overflow-hidden mt-6 md:mt-8 bg-white">
+      <div className="absolute inset-0 bg-white">
         {images.map((src, index) => (
           <img
             key={src}
             src={src}
             alt="College Building"
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
+            className={`absolute inset-0 w-full h-full object-contain object-center transition-opacity duration-1000 ease-in-out ${
               index === currentImageIndex ? 'opacity-100' : 'opacity-0'
             }`}
           />
         ))}
-        <div className="absolute inset-0 bg-black/20 z-10"></div>
+        <div className="absolute inset-0 z-10"></div>
       </div>
 
       <div className="relative h-full flex items-center justify-center z-20">

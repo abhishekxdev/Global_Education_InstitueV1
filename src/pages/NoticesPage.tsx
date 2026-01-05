@@ -62,11 +62,11 @@ export default function NoticesPage() {
                 className="border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group cursor-pointer"
                 onClick={() => setSelectedImage(notice.image!)}
               >
-                <div className="relative aspect-[3/4] overflow-hidden">
+                <div className="relative aspect-[3/4] overflow-hidden bg-white">
                   <img
                     src={notice.image}
                     alt={notice.title}
-                    className="w-full h-full object-contain bg-gray-100 group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-contain bg-white group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
                     <div className="opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white/90 px-4 py-2 rounded-full flex items-center gap-2">
@@ -86,7 +86,7 @@ export default function NoticesPage() {
                 key={notice.id}
                 className="border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group bg-white flex flex-col h-full"
               >
-                <div className="relative aspect-[3/4] overflow-hidden bg-gray-100">
+                <div className="relative aspect-[3/4] overflow-hidden bg-white">
                   <iframe 
                     src={getPreviewUrl(notice.link!)}
                     title={notice.title}
