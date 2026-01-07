@@ -135,6 +135,9 @@ export default function Footer() {
               <a href="#sitemap" className="text-gray-400 hover:text-blue-400 transition-colors">
                 Sitemap
               </a>
+              <span className="text-gray-400">
+                Last Updated: 08/01/2026
+              </span>
             </div>
           </div>
         </div>

@@ -52,7 +52,10 @@ export default function GalleryPage() {
     '/activity/day-activity-globalsanchore-44-250x150.jpg',
     '/activity/day-activity-globalsanchore-45-250x150.jpg',
     '/activity/day-activity-globalsanchore-46-250x150.jpg',
-    '/activity/day-activity-globalsanchore-47-250x150.jpg'
+    '/activity/day-activity-globalsanchore-47-250x150.jpg',
+    '/activity/newyear1.jpeg',
+    '/activity/newyear2.jpeg',
+    '/activity/newyear3.jpeg'
   ];
 
   const sportsImages = [
@@ -74,7 +77,11 @@ export default function GalleryPage() {
     '/news/media7-250x150.jpg',
     '/news/media8-250x150.jpg',
     '/news/media9-250x150.jpg',
-    '/news/media10-250x150.jpg'
+    '/news/media10-250x150.jpg',
+    '/news/news51.jpeg',
+    '/news/news52.jpeg',
+    '/news/news53.jpeg',
+    '/news/news54.jpeg'
   ];
 
   const socialImages = [
@@ -89,6 +96,20 @@ export default function GalleryPage() {
     '/anilkbishnoi.jpg'
   ];
 
+  const scoutImages = [
+    '/scout/scout1.jpeg',
+    '/scout/scout2.jpeg',
+    '/scout/scout3.jpeg',
+    '/scout/scout4.jpeg',
+    '/scout/scout5.jpeg',
+    '/scout/scout6.jpeg',
+    '/scout/scout7.jpeg',
+    '/scout/scout8.jpeg',
+    '/scout/scout9.jpeg',
+    '/scout/scout10.jpeg',
+    '/scout/scout11.jpeg',
+  ];
+
   const galleryItems = [
     { title: 'Activity', image: activityImages[0], images: activityImages },
     { title: 'Sports', image: sportsImages[0], images: sportsImages },
@@ -96,6 +117,7 @@ export default function GalleryPage() {
     { title: 'Social Activities', image: socialImages[0], images: socialImages },
     { title: 'Founders', image: foundersImages[0], images: foundersImages },
     { title: 'Campus', image: '/collegecamous.png', images: ['/collegecamous.png'] },
+    { title: 'Scout', image: scoutImages[0], images: scoutImages },
   ];
 
   const openGallery = (categoryIndex: number) => {
