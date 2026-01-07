@@ -4,21 +4,6 @@ export default function QuoteBanner() {
   return (
     <section className="bg-white py-12">
       <div className="max-w-7xl mx-auto px-4">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-orange-900 uppercase tracking-wide mb-2">
-            Welcome to Global Education Institute
-          </h2>
-          <div className="flex justify-center items-center gap-2 flex-wrap">
-             <Quote className="w-6 h-6 text-orange-600 rotate-180 hidden md:block" />
-             <p className="text-xl md:text-2xl font-medium text-orange-800">
-               Mission to Empower Society through Education
-             </p>
-             <Quote className="w-6 h-6 text-orange-600 hidden md:block" />
-          </div>
-          <div className="w-24 h-1 bg-orange-600 mx-auto mt-4"></div>
-        </div>
-
         {/* Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 shadow-2xl rounded-lg overflow-hidden">
           {/* Vision Section */}

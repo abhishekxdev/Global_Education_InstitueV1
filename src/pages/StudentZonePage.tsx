@@ -117,7 +117,7 @@ export default function StudentZonePage() {
                             </tr>
                             <tr className="hover:bg-orange-50 transition-colors">
                                 <td className="px-6 py-4 font-medium text-gray-900">3</td>
-                                <td className="px-6 py-4 text-gray-800 font-semibold">M.A. Geography Semester (NEP2020) Course</td>
+                                <td className="px-6 py-4 text-gray-800 font-semibold">M.A. (History, Geography, Political Science, Hindi ) (NEP2020) Course</td>
                                 <td className="px-6 py-4 text-gray-700">4000/- Per Semester</td>
                                 <td className="px-6 py-4 text-gray-600 italic">As Per University</td>
                             </tr>

@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, Facebook, GraduationCap, Users, Globe } from 'lucide-react';
+import { Linkedin, Twitter, Facebook, GraduationCap, Users, Globe, Quote, ChevronRight } from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -69,63 +69,87 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Vision and Mission Section */}
+        {/* Vision, Founders, and Mission Section (Moved from QuoteBanner) */}
         <div className="mb-20">
-          
-          <div className="flex flex-col md:flex-row relative">
-            {/* Center Divider - Hidden on mobile */}
-            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gray-300 transform -translate-x-1/2"></div>
-
-            {/* Vision */}
-            <div className="md:w-1/2 md:pr-12 pb-12 md:pb-0">
-              <div className="flex justify-end mb-8">
-                 <h3 className="text-3xl font-serif border-b-2 border-gray-300 pb-2 inline-block">Vision</h3>
+          <div className="grid grid-cols-1 lg:grid-cols-3 shadow-2xl rounded-lg overflow-hidden">
+            {/* Vision Section */}
+            <div className="bg-orange-600 text-white p-8 relative overflow-hidden group">
+              <div className="relative z-10">
+                <h3 className="text-2xl font-bold text-center border-b border-white/30 pb-4 mb-6 tracking-wider">VISION</h3>
+                <Quote className="w-12 h-12 text-white/20 mb-4" />
+                <p className="text-lg leading-relaxed font-medium">
+                  "To create world class quality professionals and educators capable of providing leadership in all spheres of life and society"
+                </p>
+                <div className="flex justify-end">
+                  <Quote className="w-8 h-8 text-white/20 mt-4" />
+                </div>
               </div>
-              <ul className="space-y-6 text-gray-600 text-right mb-8">
-                <li className="flex items-center justify-end gap-4">
-                  <span>Foster an inclusive and dynamic learning environment.</span>
-                  <div className="w-2 h-2 bg-gray-400 rounded-full shrink-0"></div>
-                </li>
-                <li className="flex items-center justify-end gap-4">
-                  <span>Inspire intellectual curiosity, innovation, and ethical leadership</span>
-                  <div className="w-2 h-2 bg-gray-400 rounded-full shrink-0"></div>
-                </li>
-                <li className="flex items-center justify-end gap-4">
-                  <span>Empower individuals for excellence and societal impact.</span>
-                  <div className="w-2 h-2 bg-gray-400 rounded-full shrink-0"></div>
-                </li>
-                <li className="flex items-center justify-end gap-4">
-                  <span>Develop global citizens with a positive influence.</span>
-                  <div className="w-2 h-2 bg-gray-400 rounded-full shrink-0"></div>
-                </li>
-              </ul>
-
+              {/* Decoration */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-150 duration-700"></div>
             </div>
 
-            {/* Mission */}
-            <div className="md:w-1/2 md:pl-12 pt-12 md:pt-0 border-t md:border-t-0 border-gray-300">
-              <div className="flex justify-start mb-8">
-                 <h3 className="text-3xl font-serif border-b-2 border-gray-300 pb-2 inline-block">Mission</h3>
+            {/* Center Image Section */}
+            <div className="bg-gray-100 p-6 flex flex-col md:flex-row lg:flex-col items-center justify-center gap-6">
+              {/* Dr. Surendra Vishnoi */}
+              <div className="flex flex-col items-center group">
+                <div className="w-40 h-40 rounded-full border-4 border-orange-600 shadow-xl overflow-hidden mb-3 transition-transform group-hover:scale-105 duration-300">
+                  <img 
+                    src="/surendraimg.jpg" 
+                    alt="Dr. Surendra Vishnoi" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="text-center">
+                  <h4 className="text-lg font-bold text-gray-900">Dr. Surendra Vishnoi</h4>
+                  <p className="text-sm text-orange-600 font-medium">Founder & Director</p>
+                </div>
               </div>
-              <ul className="space-y-6 text-gray-600 text-left mb-8">
-                <li className="flex items-center justify-start gap-4">
-                  <div className="w-2 h-2 bg-gray-400 rounded-full shrink-0"></div>
-                  <span>Deliver transformative education through innovative curriculum.</span>
-                </li>
-                <li className="flex items-center justify-start gap-4">
-                   <div className="w-2 h-2 bg-gray-400 rounded-full shrink-0"></div>
-                   <span>Cultivate holistic development, values, and resilience.</span>
-                </li>
-                <li className="flex items-center justify-start gap-4">
-                   <div className="w-2 h-2 bg-gray-400 rounded-full shrink-0"></div>
-                   <span>Drive research, innovation, and academic excellence.</span>
-                </li>
-                <li className="flex items-center justify-start gap-4">
-                   <div className="w-2 h-2 bg-gray-400 rounded-full shrink-0"></div>
-                   <span>Foster a culture of lifelong learning and societal impact.</span>
-                </li>
-              </ul>
 
+              {/* Mr. Anil K Vishnoi */}
+              <div className="flex flex-col items-center group">
+                <div className="w-40 h-40 rounded-full border-4 border-orange-600 shadow-xl overflow-hidden mb-3 transition-transform group-hover:scale-105 duration-300">
+                  <img 
+                    src="/anilkbishnoi.jpg" 
+                    alt="Mr. Anil K Vishnoi" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="text-center">
+                  <h4 className="text-lg font-bold text-gray-900">Mr. Anil K Vishnoi</h4>
+                  <p className="text-sm text-orange-600 font-medium">Co Founder & Chairman</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Mission Section */}
+            <div className="bg-gray-700 text-white p-8">
+               <h3 className="text-2xl font-bold text-center border-b border-gray-500 pb-4 mb-6 tracking-wider">MISSION</h3>
+               <ul className="space-y-6">
+                 <li className="flex items-start gap-3 group">
+                   <div className="mt-1 p-1 bg-white/10 rounded-full group-hover:bg-orange-500 transition-colors flex-shrink-0">
+                     <ChevronRight className="w-4 h-4" />
+                   </div>
+                   <p className="text-gray-100 text-sm leading-relaxed">To provide quality education in Arts, Science, and Teacher Training disciplines.</p>
+                 </li>
+                 <li className="flex items-start gap-3 group">
+                   <div className="mt-1 p-1 bg-white/10 rounded-full group-hover:bg-orange-500 transition-colors flex-shrink-0">
+                     <ChevronRight className="w-4 h-4" />
+                   </div>
+                   <p className="text-gray-100 text-sm leading-relaxed">To organize and arrange innovative courses in Higher Education and Professional Development.</p>
+                 </li>
+                 <li className="flex items-start gap-3 group">
+                   <div className="mt-1 p-1 bg-white/10 rounded-full group-hover:bg-orange-500 transition-colors flex-shrink-0">
+                     <ChevronRight className="w-4 h-4" />
+                   </div>
+                   <p className="text-gray-100 text-sm leading-relaxed">To arrange vocational courses in the upcoming fields and innovative subjects to meet global advancement.</p>
+                 </li>
+                 <li className="flex items-start gap-3 group">
+                   <div className="mt-1 p-1 bg-white/10 rounded-full group-hover:bg-orange-500 transition-colors flex-shrink-0">
+                     <ChevronRight className="w-4 h-4" />
+                   </div>
+                   <p className="text-gray-100 text-sm leading-relaxed">To promote research in the fields of Humanities, Sciences, and Education.</p>
+                 </li>
+               </ul>
             </div>
           </div>
         </div>

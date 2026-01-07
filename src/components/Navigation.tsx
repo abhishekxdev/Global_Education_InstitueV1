@@ -23,7 +23,7 @@ export default function Navigation({ isMenuOpen, setIsMenuOpen }: NavigationProp
   ];
 
   return (
-    <nav className="bg-gray-900 py-4 px-6">
+    <nav className="bg-gray-900 py-4 px-6 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto">
         {/* Navigation Menu */}
         <ul className={`

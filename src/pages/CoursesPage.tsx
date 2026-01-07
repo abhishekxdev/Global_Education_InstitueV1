@@ -38,6 +38,14 @@ export default function CoursesPage() {
       intake: null,
       description: 'Rajasthan State Certificate in Information Technology. A state-recognized IT literacy course designed to empower learners with essential computer skills. Covering basics of computers, internet usage, and productivity tools, this certification enhances employability in various government and private sector jobs.',
     },
+    {
+      title: 'M.A.',
+      subtitle: '(History, Geography, Political Science, Hindi)',
+      image: 'https://images.pexels.com/photos/8199562/pexels-photo-8199562.jpeg?auto=compress&cs=tinysrgb&w=800',
+      students: null,
+      intake: null,
+      description: 'Master of Arts program offering specialization in History, Geography, Political Science, and Hindi. This advanced degree deepens knowledge and research skills in the chosen field, preparing students for higher academic pursuits and professional roles.',
+    },
   ];
 
   return (

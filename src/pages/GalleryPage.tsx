@@ -81,7 +81,11 @@ export default function GalleryPage() {
     '/news/news51.jpeg',
     '/news/news52.jpeg',
     '/news/news53.jpeg',
-    '/news/news54.jpeg'
+    '/news/news54.jpeg',
+    '/news/newsscout.jpeg',
+    '/news/newsscout2.jpeg',
+    '/news/newsscout4.jpeg',
+    '/news/newsscout5.jpeg'
   ];
 
   const socialImages = [
