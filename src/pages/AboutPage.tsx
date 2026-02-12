@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, Facebook, GraduationCap, Users, Globe, Quote, ChevronRight } from 'lucide-react';
+import { GraduationCap, Users, Globe, Quote, ChevronRight } from 'lucide-react';
 
 export default function AboutPage() {
   return (

@@ -1,4 +1,4 @@
-import { Users, Calendar, Building } from 'lucide-react';
+import { Users, Calendar } from 'lucide-react';
 
 export default function CoursesPage() {
   const courses = [

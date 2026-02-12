@@ -1,4 +1,4 @@
-import { Bell, ZoomIn, X, FileText, ExternalLink } from 'lucide-react';
+import { Bell, ZoomIn, X, ExternalLink } from 'lucide-react';
 import { useState } from 'react';
 
 interface Notice {
@@ -13,6 +13,12 @@ export default function NoticesPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const notices: Notice[] = [
+    {
+      id: 5,
+      title: 'Internal Examination Notice',
+      link: 'https://drive.google.com/file/d/1xxM-_Y5uPqOCLSBlFZZVGqRoasnkmK8F/view?usp=drive_link',
+      date: 'New'
+    },
     {
       id: 1,
       title: 'Important Notice',

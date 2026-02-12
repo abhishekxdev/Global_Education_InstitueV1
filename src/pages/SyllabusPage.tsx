@@ -1,5 +1,3 @@
-import { BookOpen, Download, FileText } from 'lucide-react';
-
 export default function SyllabusPage() {
   const courses = [
     {
