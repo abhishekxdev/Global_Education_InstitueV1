@@ -4,6 +4,7 @@ import { useState } from 'react';
 interface Notice {
   id: number;
   title: string;
+  description?: string;
   image?: string;
   link?: string;
   date?: string;
@@ -16,6 +17,7 @@ export default function NoticesPage() {
     {
       id: 5,
       title: 'Internal Examination Notice',
+      description: 'आवश्यक सूचना:- ग्लोबल एजुकेशन इंस्टिट्यूट डेडवा,सांचोर के बी. एस. सी.बी.एड. -बी.ए. बी.एड. तृतीय वर्ष के विद्यार्थियों को सूचित किया जाता है कि आपके मिड-टर्म/आंतरिक मूल्यांकन परीक्षा दिनांक 13.02.2026 से 20.02.2026 तक निर्धारित समय सारणी के अनुसार होना प्रस्तावित है। अतः आप सभी सूचित हो कि आंतरिक मूल्यांकन परीक्षा मैं उपस्थित होकर परीक्षा सम्पन्न कराए। अगर कोई विद्यार्थी अनुपस्थित रहता है और परीक्षा के आंतरिक मूल्यांकन परीक्षा मैं अनुपस्थित दर्ज़ होता है तो वह स्वयं जिमेदार होगा। इसमें महाविद्यालय किसी भी प्रकार से जिमेदार नही होगी। आज्ञा से, प्राचार्य,ग्लोबल एजुकेशन इंस्टीटूट डेडवा,सांचोर।',
       link: 'https://drive.google.com/file/d/1xxM-_Y5uPqOCLSBlFZZVGqRoasnkmK8F/view?usp=drive_link',
       date: 'New'
     },
@@ -105,6 +107,11 @@ export default function NoticesPage() {
                    <h3 className="text-xl font-bold text-gray-900 text-center mb-2">
                      {notice.title}
                    </h3>
+                   {notice.description && (
+                     <p className="text-sm text-gray-700 leading-relaxed mb-3 text-justify px-2">
+                       {notice.description}
+                     </p>
+                   )}
                    <div className="flex items-center justify-center gap-2">
                     {notice.date && (
                         <span className="inline-block px-3 py-1 bg-orange-100 text-orange-700 text-xs font-semibold rounded-full">
