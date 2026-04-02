@@ -15,6 +15,12 @@ export default function NoticesPage() {
 
   const notices: Notice[] = [
     {
+      id: 8,
+      title: 'Exam Form Information',
+      link: 'https://drive.google.com/file/d/12LpMmF4vDO0pWqhNpEIT3bbpnGbX7Oxu/view?usp=sharing',
+      date: 'New'
+    },
+    {
       id: 7,
       title: 'Semester Examination 2025-26 (B.A. NEP2020)',
       description: 'परीक्षा सम्बंधित आवश्यक सूचना:-  ग्लोबल एजुकेशन इंस्टिट्यूट डेडवा,सांचोर मैं अध्यनरत बी. ए. (NEP2020) SEMEATER प्रथम,तृतीय एवं पंचम सेमेस्टर की सैद्धान्तिक परीक्षा निर्धारित समय सारणी अनुसार 10 मार्च  2026 से प्रारंभ हो रहे है।  अतः आप निर्धारित समय अनुसार परीक्षा केंद्र पर पहुँच कर परीक्षा देना सुनिश्चित करे।परीक्षा केंद्र पर परीक्षा देने जाते समय कोई भी एक फोटोयुक्त आई.डी. कार्ड लेजाना अनिवार्य है।',
